@@ -8,7 +8,7 @@ export const Container = styled.div`
     position: relative;
     max-width: 600px;
     width: 95%;
-    height: 70rem;
+    height: 65rem;
 
     background: #fff;
     
@@ -19,6 +19,10 @@ export const Container = styled.div`
     margin: auto;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+
+    div {
+        margin-bottom: 0!important;
+    }
 
     @media (max-width: 800px) {
         padding: 2rem;
@@ -35,7 +39,16 @@ export const Container = styled.div`
         font-size: 1rem;
     }
 
-    .b.btn.btn-secondary {
+    button {
         margin-top: 10px;
+    }
+
+    .error, .danger {
+        color: red;
+        margin-bottom: -1rem;
+    }
+
+    .success {
+        color: green;
     }
 `
